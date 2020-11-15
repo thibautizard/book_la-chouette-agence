@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch css/main.scss:css/styles.css --style compressed",
-    "prefixer": "postcss ./css/styles.css --use autoprefixer -d ./css"
+    "prefixer": "postcss ./css/styles.css --use autoprefixer -d ./css",
+    "git" : "git commit -am 'last commit'"
   },
   "repository": {
     "type": "git",
