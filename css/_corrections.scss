@@ -12,13 +12,13 @@
     border:2px solid black;
 }
 
-#cta-hero {
+.cta-hero {
     color:rgb(51,51,51) !important;
 }
 
-#cta-hero:hover {
+.cta-hero:hover {
     background-color: rgb(51,51,51) !important;
-    color:rgb(230 155 116) !important;
+    color:rgb(230, 155, 116) !important;
 }
 
 .titres {
@@ -65,20 +65,21 @@
 
 #bloc-2-services  .presentation{
     padding: 0 50px !important; 
+    font-weight: bold !important;
 }
 
-cite {
-    display: block;
-    font-size:20px;
-    border-left: 3px solid lightgrey;
-    padding: 0 23px;
+.citation {
+    display: block !important;
+    font-size:20px !important;
+    border-left: 3px solid lightgrey !important;
+    padding: 0 23px !important;
 }
 
-cite p {
+.citation_source {
     font-style: normal;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 8px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    margin-top: 8px !important;
 }
 
 .nav-link a {
@@ -109,10 +110,17 @@ h2 {
 .btn {
     box-sizing: border-box !important;
     transition: background .2s linear;
+    background-color: rgb(230, 155, 116) !important;
+    color: rgb(51,51,51) !important;
 }
 
 .btn:focus-within {
     border: 3px solid blue;
+}
+
+.btn:hover {
+    background-color: rgb(51,51,51) !important;
+    color:rgb(230, 155, 116) !important;
 }
 
 .btn-contact {
@@ -158,6 +166,7 @@ h2 {
 
 #bloc-4-portfolio h2 {
     font-weight:600 !important;
+    padding: 0 20px !important;
 }
 
 .portfolio-row p {
@@ -227,6 +236,7 @@ h2 {
     font-weight: bold !important;
     font-size: 27px !important;
     opacity: 1 !important;
+    padding: 0 20px !important;
 }
 #bloc-5-cta {
     position:static !important;
