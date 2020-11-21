@@ -83,7 +83,7 @@
 		<div class="row">
 			<div class="col-sm-8">
 				<h2 class="text-center"> Formulaire de contact </h2>
-				<form id="form_1" success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" onsubmit="return confirm('Voulez-vous vraiment envoyer ce formulaire ?');">
+				<form id="form_1" onsubmit="return confirm('Voulez-vous vraiment envoyer ce formulaire ?');">
 					
 					<div class="form-group">
 						<label for="name"> Nom </label>
@@ -99,7 +99,7 @@
 						<i class="fas fa-check-circle"></i>
 					</div>
 					<div class="form-group">
-						<label for="source"> Comment nous avez-vous connu ? </label> </br>
+						<label for="source"> Comment nous avez-vous connu ? </label> <br>
 						<select class="form-control" id="source" required >
 							<option disabled selected value> -- Sélectionnez une recommandation -- </option>
 							<option value="web"> Recherche internet </option>
@@ -142,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-		</div>
+		
 	</div>
 </section>
 </main> 
