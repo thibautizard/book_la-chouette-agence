@@ -108,8 +108,9 @@ h2 {
 }
 
 .btn {
+    border:3px solid transparent;
     box-sizing: border-box !important;
-    transition: background .2s linear;
+    transition: all .2s linear;
     background-color: rgb(230, 155, 116) !important;
     color: rgb(51,51,51) !important;
 }
@@ -357,8 +358,9 @@ transform: scale(1.5);
     font-size:20px !important;
 }
 
-#bloc-7 form input {
+#bloc-7 form input,  #bloc-7 form textarea{
     font-size:16px !important;
+    margin-bottom: 4px !important;
 }
 
 #bloc-7 form button {
@@ -367,6 +369,66 @@ transform: scale(1.5);
     width: 40% !important;
     margin: auto !important;
     margin-top: 40px !important;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control.activated:invalid {
+    border-bottom: 2px solid red !important;
+    // animation: shake 0.2s ease-in-out 0s 2;
+}
+
+
+.form-control.activated:valid {
+    border-bottom: 2px solid rgb(27, 176, 27) !important;
+}
+
+.form-control.activated:invalid + .messageErreur {
+ visibility: visible;
+}
+
+.form-group {
+    position: relative;
+}
+
+.fa-check-circle {
+    color:rgb(27, 176, 27);
+    position:absolute;
+    top:40px;
+    right:10px;
+    font-size:19px;
+    visibility: hidden;
+}
+
+.form-control.activated:valid ~ .fa-check-circle {
+    visibility: visible;
+}
+   
+.fa-times-circle {
+    color:red;
+    position:absolute;
+    top:40px;
+    right:10px;
+    font-size:19px;
+    visibility: hidden;
+}
+
+.form-control.activated:invalid ~ .fa-times-circle {
+    visibility: visible;
+}   
+
+select, select option {
+    width:400px !important;
+    font-size:16px !important;
+}
+
+.messageErreur {
+    font-size:16px;
+    padding-left: 2px;
+    color:rgb(186, 33, 33) !important;
+    visibility: hidden;
 }
 
 #bloc-7 form button:hover {
@@ -408,3 +470,11 @@ transform: scale(1.5);
 
     color:white !important;
 }
+
+@keyframes shake {
+    0% { margin-left: 0rem; }
+    25% { margin-left: 0.5rem; }
+    75% { margin-left: -0.5rem; }
+    100% { margin-left: 0rem; }
+}
+
